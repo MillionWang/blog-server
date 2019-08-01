@@ -8,7 +8,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/login', require('./query/login'));
-router.get('/comments', require('./query/comments'))
+router.get('/comments', require('./query/comments'));
 router.get('/articles', require('./query/articles'));
 
 module.exports = router;

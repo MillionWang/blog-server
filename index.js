@@ -9,6 +9,7 @@ const cors = require('cors');
 const patchExpress = require('./libs/express/patch');
 patchExpress(express);
 const app = express();
+require('./libs/mongo');
 
 // parse request body
 app.use(bodyParser.json());

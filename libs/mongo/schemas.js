@@ -2,6 +2,7 @@
 const Schema = require('mongoose').Schema;
 
 let articleSchema = new Schema({
+    articleId: Number,
     title: String,
     content: String,
     author: String,

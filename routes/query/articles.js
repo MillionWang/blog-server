@@ -6,6 +6,7 @@
 const articlesModel = require('../../libs/mongo/models').articlesModel;
 
 module.exports = async (req, res) => {
-    let result = await articlesModel.find({title: 'wzp'})
+    let params = req.query;
+    let result = await articlesModel.find(params);
     res.success(result);
 }

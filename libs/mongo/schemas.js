@@ -4,6 +4,7 @@ const Schema = require('mongoose').Schema;
 let articleSchema = new Schema({
     articleId: Number,
     title: String,
+    category: String,
     content: String,
     author: String,
     date: String

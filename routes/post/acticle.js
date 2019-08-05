@@ -9,7 +9,7 @@ const {articlesModel} = require('../../libs/mongo/models');
 
 module.exports = async (req, res) => {
     let body = req.body;
-    let {title, content, date} = body;
-    await articlesModel.create({title, content, date});
+    let {title, content, date, category} = body;
+    await articlesModel.create({title, content, date, category});
     res.success('post article');
 };

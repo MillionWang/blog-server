@@ -8,5 +8,6 @@ const Router = express.Router();
 
 Router.post('/comment', require('./post/comment'));
 Router.post('/article', require('./post/acticle'));
+Router.post('/deletearticle', require('./post/deleteArticle'));
 
 module.exports = Router;

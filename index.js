@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 // Access-Control-Allow-Origin
-const corsWhiteList = ['http://172.18.22.105:8080'];
+const corsWhiteList = ['http://172.18.22.63:8080'];
 const corsOptions = {
     origin (origin, callback) {
         if (corsWhiteList.includes(origin)) {
